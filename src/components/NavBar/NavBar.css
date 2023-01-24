@@ -1,0 +1,10 @@
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.active {
+  color: green;
+}
