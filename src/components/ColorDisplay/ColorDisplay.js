@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import './ColorDisplay.css';
 
 export default function ColorDisplay() {
   const { redValue, greenValue, blueValue } = useParams();
