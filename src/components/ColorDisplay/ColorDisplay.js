@@ -5,7 +5,7 @@ export default function ColorDisplay() {
   const { redValue, greenValue, blueValue } = useParams();
 
   const compliment = (value) => {
-    return 127 - value;
+    return Math.abs(127 - value);
   };
 
   return (
