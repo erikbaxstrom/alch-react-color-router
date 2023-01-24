@@ -9,7 +9,10 @@ export default function ColorDisplay() {
   };
 
   return (
-    <div style={{ backgroundColor: `rgb(${redValue}, ${greenValue}, ${blueValue})` }}>
+    <div
+      className="display"
+      style={{ backgroundColor: `rgb(${redValue}, ${greenValue}, ${blueValue})` }}
+    >
       <p
         style={{
           color: `rgb(${compliment(redValue)}, ${compliment(greenValue)}, ${compliment(

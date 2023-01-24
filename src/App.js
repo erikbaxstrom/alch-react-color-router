@@ -7,21 +7,20 @@ import NotFound from './components/NotFound/NotFound.js';
 function App() {
   return (
     <div className="App">
-      <h1>Color Picker</h1>
+      <header>
+        <h1>Color Picker</h1>
+      </header>
+
       <NavBar />
-      <main>
-        <Switch>
-          <Route exact path="/">
-            Choose a color from the links above, or enter your own RGB values into the URL.
-          </Route>
-          <Route
-            exact
-            path="/rgb/:redValue/:greenValue/:blueValue"
-            component={ColorDisplay}
-          ></Route>
-          <Route path="*" component={NotFound} />
-        </Switch>
-      </main>
+      <Switch>
+        <Route exact path="/">
+          <div>
+            <p>Choose a color from the links above, or enter your own RGB values into the URL.</p>
+          </div>
+        </Route>
+        <Route exact path="/rgb/:redValue/:greenValue/:blueValue" component={ColorDisplay}></Route>
+        <Route path="*" component={NotFound} />
+      </Switch>
     </div>
   );
 }
