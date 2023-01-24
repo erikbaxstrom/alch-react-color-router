@@ -12,7 +12,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            Yore hooome!
+            Choose a color from the links above, or enter your own RGB values into the URL.
           </Route>
           <Route
             exact
