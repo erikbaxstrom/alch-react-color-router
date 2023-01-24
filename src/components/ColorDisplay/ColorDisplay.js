@@ -4,7 +4,7 @@ export default function ColorDisplay() {
   const { redValue, greenValue, blueValue } = useParams();
 
   return (
-    <p>
+    <p style={{ backgroundColor: `rgb(${redValue}, ${greenValue}, ${blueValue})` }}>
       You have chosen {redValue}, {greenValue}, {blueValue}
     </p>
   );
